@@ -1,0 +1,17 @@
+aside {
+  .aside-container {
+    max-width: 25rem;
+    max-height: 45.5rem;
+    position: relative;
+
+    header {
+      
+    }
+    & > img {
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      border-radius: 0.75rem;
+    }
+  }
+}
