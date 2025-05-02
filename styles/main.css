@@ -1,0 +1,13 @@
+main {
+  background-color: var(--shape-body);
+  padding: 5rem 8.125rem;
+
+  .main-container {
+    gap: 2.5rem;
+    h1 {
+      text-align: center;
+      font: var(--Heading-Md);
+      color: var(--text-heading);
+    }
+  }
+}

@@ -3,11 +3,11 @@
   --logo: 400 40px var(--font-family-Leckerli-One);
 
   --font-family-Baloo-2: "Baloo 2", sans-serif;
-  --Heading-Md: 28px var(--font-family-Baloo-2) 700;
-  --Heading-Sm: 18px var(--font-family-Baloo-2) 700;
+  --Heading-Md: 700 28px var(--font-family-Baloo-2);
+  --Heading-Sm: 700 18px var(--font-family-Baloo-2);
 
   --font-family-Open-Sans: "Open Sans", sans-serif;
-  --Body-Md: 16px var(--font-family-Open-Sans) 600;
-  --Body-Sm: 14px var(--font-family-Open-Sans) 600;
-  --Body-Xs: 12px var(--font-family-Open-Sans) 600;
+  --Body-Md: 600 16px var(--font-family-Open-Sans);
+  --Body-Sm: 600 14px var(--font-family-Open-Sans);
+  --Body-Xs: 600 12px var(--font-family-Open-Sans);
 }

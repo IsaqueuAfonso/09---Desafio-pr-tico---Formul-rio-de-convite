@@ -13,6 +13,7 @@
 </head>
 <body>
   <div id="app">
+
     <aside>
       <div class="aside-container">
         <header>
@@ -29,7 +30,56 @@
       </div>
     </aside>
     
-    <main>Olá</main>
+    <main>
+      <div class="main-container flex-col">
+        <h1>Crie seu convite</h1>
+
+        <form class="flex">
+          <fieldset class="flex-col">
+            <div class="img-legend flex">
+              <img src="./assets/ícones/calendar.svg" alt="">
+              <legend>Sobre o evento</legend>
+            </div>
+
+            <div class="text-input flex-col">
+              <label for="title">Título</label>
+              <input type="text"
+              id="title"
+              name="title"
+              placeholder="Nome do evento"
+              required>
+              <div class="error-message">
+                <img
+                src="./assets/ícones/circle-alert.svg"
+                alt="ícone de alerta de error">
+                <span>Error message</span>
+              </div>
+            </div>
+
+            <div class="text-input flex text-input-container">
+              <div class="input-two flex-col">
+                <label for="date">Início</label>
+                <input type="datetime-local"
+                id="date"
+                name="date"
+                required>
+              </div>
+
+              <div class="input-two flex-col">
+                <label for="link">Local</label>
+                <input type="url"
+                id="link"
+                name="link"
+                placeholder="Link do endereço"
+                required>
+              </div>
+            </div>
+
+            <button>enviar</button>
+          </fieldset>
+        </form>
+      </div>
+    </main>
   </div>
 </body>
 </html>

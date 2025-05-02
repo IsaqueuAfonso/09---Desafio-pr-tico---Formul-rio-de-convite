@@ -5,9 +5,22 @@ aside {
     position: relative;
 
     header {
-      
+      padding: 2rem;
+      img {
+        margin-bottom: 16px;
+      }
+      h2 {
+        font: var(--logo);
+        color: var(--pink);
+        margin-bottom: 4px;
+      }
+      p {
+        font: var(--Body-Md);
+        color: var(--text-heading);
+      };
     }
     & > img {
+      width: 100%;
       position: absolute;
       inset: 0;
       z-index: -1;
