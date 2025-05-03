@@ -1,0 +1,41 @@
+.text-input {
+  width: 100%;
+  gap: 0.75rem;
+
+  label {
+    font: var(--Body-Sm);
+    color: var(--text-body);
+  }
+
+  input {
+    all: unset;
+    width: 100%;
+    padding: 0.8125rem 1rem;
+    border: 1px solid var(--input-stroke);
+    border-radius: 0.5rem;
+    background: var(--input-base);
+    color: var(--text-heading);
+    font: var(--Body-Md);
+
+    &::placeholder {
+      color: var(--input-placeholder);
+    }
+    &:focus {
+      border: 1px solid var(--brand-light);
+      background: var(--input-base);
+      color: var(--text-heading);
+    }
+    &:invalid {
+      border: 1px solid var(--danger);
+    }
+    &:invalid + .error-message {
+      display: flex;
+    }
+  }
+
+  input:focus {
+    border: 1px solid var(--brand-light);
+    background: var(--input-base);
+    color: var(--text-heading);
+  }
+}

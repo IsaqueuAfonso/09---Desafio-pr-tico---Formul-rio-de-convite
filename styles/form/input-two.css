@@ -1,0 +1,8 @@
+.input-two {
+  display: flex;
+  width: 100%;
+
+  input:invalid {
+    border: 1px solid var(--input-stroke);
+  }
+}

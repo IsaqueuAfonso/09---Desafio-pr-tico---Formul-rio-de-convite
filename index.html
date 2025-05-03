@@ -1,85 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulário de convite</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de convite</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/index.css">
-</head>
-<body>
-  <div id="app">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <div id="app">
+      <aside>
+        <div class="aside-container">
+          <header>
+            <img
+              src="./assets/Logo.png"
+              alt="Ilustração de um cone amarelo com confetes rosa, azuis e amarelos espalhados"
+            />
+            <h2>Festivite</h2>
+            <p>Crie um convite digital para o seu evento</p>
+          </header>
 
-    <aside>
-      <div class="aside-container">
-        <header>
-          <img src="./assets/Logo.png" alt="Ilustração de um cone amarelo com confetes rosa, azuis e amarelos espalhados">
-          <h2>
-            Festivite
-          </h2>
-          <p>
-            Crie um convite digital para o seu evento
-          </p>
-        </header>
+          <img src="./assets/Background.svg" alt="Fatias de bolo em camadas
+          arco-íris (azul, verde, amarelo, laranja e rosa) com cobertura branca
+          e uma vela rosa listrada no centro, sobre fundo preto."">
+        </div>
+      </aside>
 
-        <img src="./assets/Background.svg" alt="Fatias de bolo em camadas arco-íris (azul, verde, amarelo, laranja e rosa) com cobertura branca e uma vela rosa listrada no centro, sobre fundo preto."">
-      </div>
-    </aside>
-    
-    <main>
-      <div class="main-container flex-col">
-        <h1>Crie seu convite</h1>
+      <main>
+        <div class="main-container flex-col">
+          <h1>Crie seu convite</h1>
 
-        <form class="flex">
-          <fieldset class="flex-col">
-            <div class="img-legend flex">
-              <img src="./assets/ícones/calendar.svg" alt="">
-              <legend>Sobre o evento</legend>
-            </div>
-
-            <div class="text-input flex-col">
-              <label for="title">Título</label>
-              <input type="text"
-              id="title"
-              name="title"
-              placeholder="Nome do evento"
-              required>
-              <div class="error-message">
-                <img
-                src="./assets/ícones/circle-alert.svg"
-                alt="ícone de alerta de error">
-                <span>Error message</span>
-              </div>
-            </div>
-
-            <div class="text-input flex text-input-container">
-              <div class="input-two flex-col">
-                <label for="date">Início</label>
-                <input type="datetime-local"
-                id="date"
-                name="date"
-                required>
+          <form class="flex">
+            <fieldset class="flex-col">
+              <div class="img-legend flex">
+                <img src="./assets/ícones/calendar.svg" alt="" />
+                <legend>Sobre o evento</legend>
               </div>
 
-              <div class="input-two flex-col">
-                <label for="link">Local</label>
-                <input type="url"
-                id="link"
-                name="link"
-                placeholder="Link do endereço"
-                required>
+              <div class="text-input flex-col">
+                <label for="title">Título</label>
+                <input
+                  type="text"
+                  id="title"
+                  name="title"
+                  placeholder="Nome do evento"
+                  required
+                />
+                <div class="error-message">
+                  <img
+                    src="./assets/ícones/circle-alert.svg"
+                    alt="ícone de alerta de error"
+                  />
+                  <span>Error message</span>
+                </div>
               </div>
-            </div>
 
-            <button>enviar</button>
-          </fieldset>
-        </form>
-      </div>
-    </main>
-  </div>
-</body>
+              <div class="text-input text-input-container flex">
+                <div class="input-two flex-col">
+                  <label for="date">Início</label>
+                  <input type="datetime-local" id="date" name="date" required />
+                </div>
+
+                <div class="input-two flex-col">
+                  <label for="date">Fim</label>
+                  <input type="datetime-local" id="date" name="date" required />
+                </div>
+              </div>
+
+              <button>enviar</button>
+            </fieldset>
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
