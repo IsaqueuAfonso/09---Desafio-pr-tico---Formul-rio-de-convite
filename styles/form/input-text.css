@@ -1,5 +1,5 @@
 .text-input {
-  width: 100%;
+  max-width: 35rem;
   gap: 0.75rem;
 
   label {
@@ -9,7 +9,6 @@
 
   input {
     all: unset;
-    width: 100%;
     padding: 0.8125rem 1rem;
     border: 1px solid var(--input-stroke);
     border-radius: 0.5rem;
