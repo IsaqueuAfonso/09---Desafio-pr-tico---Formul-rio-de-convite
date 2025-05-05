@@ -1,9 +1,8 @@
 main {
-  background-color: var(--shape-body);
   padding: 5rem 8.125rem;
+  background-color: var(--shape-body);
 
   .main-container {
-    width: 100%;
     gap: 2.5rem;
     h1 {
       text-align: center;

@@ -65,12 +65,32 @@
               <div class="text-input text-input-container flex">
                 <div class="input-two flex-col">
                   <label for="date">Início</label>
-                  <input type="datetime-local" id="date" name="date" required />
+                  <input type="datetime-local" id="date" name="date" />
                 </div>
 
                 <div class="input-two flex-col">
                   <label for="date">Fim</label>
-                  <input type="datetime-local" id="date" name="date" required />
+                  <input type="datetime-local" id="date" name="date" />
+                </div>
+              </div>
+
+              <div class="text-input text-input-container flex">
+                <div class="input-two flex-col">
+                  <label for="kind">Tipo</label>
+                  <div class="container-kind flex">
+                    <input type="radio" id="kind" name="kind" />
+                    <input type="radio" id="kind" name="kind" />
+                  </div>
+                </div>
+
+                <div class="input-two flex-col">
+                  <label for="url">Local</label>
+                  <input
+                    type="url"
+                    id="url"
+                    name="url"
+                    placeholder="Link ou endereço"
+                  />
                 </div>
               </div>
 

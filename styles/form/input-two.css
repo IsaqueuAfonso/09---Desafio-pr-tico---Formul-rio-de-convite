@@ -1,8 +1,8 @@
 .input-two {
-  display: flex;
   width: 100%;
+  gap: 0.75rem;
 
-  input:invalid {
-    border: 1px solid var(--input-stroke);
+  input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    display: none;
   }
 }
