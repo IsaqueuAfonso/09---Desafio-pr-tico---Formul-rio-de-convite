@@ -1,6 +1,6 @@
 .container-kind {
   background-color: var(--input-base);
-  height: 3rem;
+  min-height: 3rem;
   border-radius: 0.5rem;
   padding: 0.25rem;
   gap: 0.25rem;
@@ -13,9 +13,16 @@
     width: 100%;
     border-radius: 0.5rem;
     z-index: 2;
+    margin-bottom: 0;
 
-    &:hover span {
-      color: var(--text-heading);
+    input {
+      position: absolute;
+      opacity: 0;
+      width: 1px;
+      height: 1px;
+      margin: 0;
+      padding: 0;
+      z-index: -1;
     }
 
     img {
@@ -28,8 +35,28 @@
       color: var(--text-body);
     }
 
+    &:hover span {
+      color: var(--text-heading);
+    }
+
     &:hover {
       background-color: var(--shape-button);
+    }
+
+    &:has(input:focus-visible) {
+      background-color: var(--shape-button);
+    }
+
+    &:has(input:focus-visible) span {
+      color: var(--text-heading);
+    }
+
+    &:has(input:focus) {
+      background-color: var(--shape-button);
+    }
+
+    &:has(input:focus) span {
+      color: var(--text-heading);
     }
   }
 }
