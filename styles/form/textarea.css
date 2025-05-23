@@ -1,0 +1,6 @@
+.textarea-container {
+  textarea {
+    all: unset;
+    background-color: var(--input-base);
+  }
+}

@@ -35,6 +35,12 @@
       color: var(--text-body);
     }
 
+    &:hover img,
+    &:has(input:focus) img {
+      filter: invert(56%) sepia(95%) saturate(486%) hue-rotate(182deg)
+        brightness(99%) contrast(105%);
+    }
+
     &:hover span {
       color: var(--text-heading);
     }
