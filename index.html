@@ -37,7 +37,7 @@
         <div class="main-container flex-col">
           <h1>Crie seu convite</h1>
 
-          <form class="flex">
+          <form class="flex-col">
             <fieldset class="flex-col">
               <div class="img-legend flex">
                 <img src="./assets/ícones/calendar.svg" alt="" />
@@ -105,9 +105,34 @@
                 </div>
               </div>
 
-              <div class="text-input textarea-container">
-                <label for="">Descrição</label>
-                <textarea name="" id=""></textarea>
+              <div class="text-input textarea-container flex-col">
+                <label for="Description">Descrição</label>
+                <textarea
+                  name="Description"
+                  id="Description"
+                  placeholder="Escreva sobre os detalhes do evento"
+                ></textarea>
+              </div>
+            </fieldset>
+
+            <fieldset class="flex-col">
+              <div class="img-legend flex">
+                <img
+                  src="./assets/ícones/paintbrush-vertical.svg"
+                  alt="Imagem de um pincel"
+                />
+                <legend>Personalização</legend>
+              </div>
+
+              <div class="container-colors">
+                <label for="color">Cor principal</label>
+                <div class="colors flex">
+                  <input
+                    type="radio"
+                    name="color"
+                    id="color"
+                    value="#59b2ff"
+                  />
               </div>
             </fieldset>
           </form>

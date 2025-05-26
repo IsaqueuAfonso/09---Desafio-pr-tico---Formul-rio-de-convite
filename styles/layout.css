@@ -14,7 +14,6 @@ body {
   gap: 1.25rem;
 
   height: 100vh;
-  overflow: hidden;
 
   aside {
     max-width: 25rem;
