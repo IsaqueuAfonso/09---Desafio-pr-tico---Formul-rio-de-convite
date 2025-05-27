@@ -1,3 +1,51 @@
-fieldset.container-colors {
-  gap: 1.75rem;
+.paleta-cores {
+  legend {
+    font: var(--Body-Sm);
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+}
+
+.cores {
+  display: flex;
+  gap: 1.11125rem;
+}
+
+.cor-item {
+  position: relative;
+}
+
+.cor-item input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.swatch {
+  display: block;
+  padding: 0.375rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  background-color: var(--shape-button);
+}
+
+.swatch::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  background-color: white;
+  transform: translate(-50%, -50%);
+}
+
+.cor-item input[type="radio"]:checked + .swatch {
+  border-color: var(--brand-light);
 }

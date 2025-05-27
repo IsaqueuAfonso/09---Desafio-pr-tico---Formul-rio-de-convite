@@ -124,16 +124,21 @@
                 <legend>Personalização</legend>
               </div>
 
-              <div class="container-colors">
-                <label for="color">Cor principal</label>
-                <div class="colors flex">
-                  <input
-                    type="radio"
-                    name="color"
-                    id="color"
-                    value="#59b2ff"
-                  />
-              </div>
+              <fieldset class="paleta-cores">
+                <legend>Cor principal</legend>
+
+                <div class="cores">
+                  <label class="cor-item" aria-label="Azul">
+                    <input type="radio" name="cor-principal" value="navy" />
+                    <span class="swatch"></span>
+                  </label>
+
+                  <label class="cor-item" aria-label="Roxo">
+                    <input type="radio" name="cor-principal" value="purple" />
+                    <span class="swatch"></span>
+                  </label>
+                </div>
+              </fieldset>
             </fieldset>
           </form>
         </div>
