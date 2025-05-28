@@ -46,6 +46,43 @@
   transform: translate(-50%, -50%);
 }
 
+.swatch.navy::after {
+  background-color: #6a59ff;
+}
+.swatch.purple::after {
+  background-color: #b259ff;
+}
+.swatch.fuschia::after {
+  background-color: #ff59f9;
+}
+.swatch.pink::after {
+  background-color: #ff598b;
+}
+.swatch.pink::after {
+  background-color: #ff598b;
+}
+.swatch.danger::after {
+  background-color: #ff5959;
+}
+.swatch.danger::after {
+  background-color: #ff5959;
+}
+.swatch.orange::after {
+  background-color: #ff8b59;
+}
+.swatch.yellow::after {
+  background-color: #ffcd59;
+}
+.swatch.lime::after {
+  background-color: #e1ff59;
+}
+.swatch.green::after {
+  background-color: #59ff91;
+}
+.swatch.cyan::after {
+  background-color: #59fff9;
+}
+
 .cor-item input[type="radio"]:checked + .swatch {
   border-color: var(--brand-light);
 }
