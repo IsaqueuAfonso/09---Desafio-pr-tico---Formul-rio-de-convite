@@ -83,6 +83,7 @@
   background-color: #59fff9;
 }
 
-.cor-item input[type="radio"]:checked + .swatch {
+.cor-item input[type="radio"]:checked + .swatch,
+.cor-item input[type="radio"]:focus-visible + .swatch {
   border-color: var(--brand-light);
 }

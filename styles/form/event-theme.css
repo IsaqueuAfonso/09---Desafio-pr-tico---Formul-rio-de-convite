@@ -1,4 +1,9 @@
 .event-theme-container {
+  height: 20.3125rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+
   label {
     max-width: 7.875rem;
     max-height: 4rem;
