@@ -180,7 +180,7 @@
                 </div>
               </fieldset>
 
-              <fieldset class="paleta-cores">
+              <fieldset class="event-theme flex-col">
                 <legend>Tema do evento</legend>
 
                 <div class="cores event-theme-container">
@@ -330,16 +330,29 @@
 
                 <div class="container-style-photo flex">
                   <div class="container-style">
-                    <input type="checkbox" id="toggle-tema" />
-                    <label for="toggle-tema" class="switch flex-col"></label>
+                    <div class="title">Estilo</div>
 
-                    <span class="conteudo">
-                      <span class="light">Claro</span>
-                      <span class="dark">Escuro</span>
-                    </span>
+                    <div class="container-toggle flex">
+                      <input type="checkbox" id="toggle-tema" />
+                      <label for="toggle-tema" class="switch flex-col"></label>
+
+                      <span class="Content">
+                        <span class="light">Claro</span>
+                        <span class="dark">Escuro</span>
+                      </span>
+                    </div>
                   </div>
 
-                  <div class="container-coverphoto"></div>
+                  <div class="container-coverphoto">
+                    <label for="cover-photo">
+                      <div>Foto de capa</div>
+
+                      <div>
+                        <input type="file" name="" id="cover-photo" />
+                        <span>Nenhum arquivo selecionado</span>
+                      </div>
+                    </label>
+                  </div>
                 </div>
               </fieldset>
             </fieldset>
