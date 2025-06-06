@@ -343,15 +343,23 @@
                     </div>
                   </div>
 
-                  <div class="container-coverphoto">
-                    <label for="cover-photo">
-                      <div>Foto de capa</div>
+                  <div class="container-coverphoto flex-col">
+                    <div>Foto de capa</div>
 
-                      <div>
-                        <input type="file" name="" id="cover-photo" />
-                        <span>Nenhum arquivo selecionado</span>
-                      </div>
-                    </label>
+                    <div class="flex">
+                      <label for="cover-photo" class="flex">
+                        <img src="./assets/ícones/upload.svg" alt="" />
+                        <span>Selecionar</span>
+                      </label>
+                      <input
+                        type="file"
+                        name=""
+                        id="cover-photo"
+                        accept="image/png"
+                      />
+                      <span>Nenhum arquivo selecionado</span>
+                      <span>image.png</span>
+                    </div>
                   </div>
                 </div>
               </fieldset>
