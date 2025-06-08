@@ -74,7 +74,7 @@
   height: 4.9375rem;
   gap: 1rem;
 
-  div {
+  .input-file {
     label {
       width: 7.4375rem;
       height: 2.5rem;
@@ -103,25 +103,30 @@
   }
 
   div:nth-child(2) {
-    gap: 0.75rem;
-    align-items: center;
-    input {
-      display: none;
-      
-    }
-
     span {
       color: var(--input-placeholder);
       font: var(--Body-Md);
     }
-
-    span:nth-child(4) {
+    span:nth-child(1) {
       display: none;
     }
 
-    input:checked + span:nth-child(4) {
-      display: inline;
-      color: var(--text-heading);
+    div {
+      gap: 0.75rem;
+      align-items: center;
+
+      input[type="file"] {
+        display: none;
+
+        &:checked + span:nth-child(2) {
+          display: inline;
+          color: var(--text-heading);
+        }
+      }
     }
   }
+}
+
+input[type="file"]:invalid + .error-message {
+  display: flex;
 }

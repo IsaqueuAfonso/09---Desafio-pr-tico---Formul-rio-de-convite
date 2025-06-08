@@ -348,16 +348,27 @@
                     <div>Foto de capa</div>
 
                     <div class="flex">
-                      <label for="cover-photo" class="flex">
-                        <img src="./assets/ícones/upload.svg" alt="" />
-                        <span>Selecionar</span>
-                      </label>
-                      <input
-                        type="file"
-                        name=""
-                        id="cover-photo"
-                        accept="image/png"
-                      />
+                      <div class="flex-col input-file">
+                        <label for="cover-photo" class="flex">
+                          <img src="./assets/ícones/upload.svg" alt="" />
+                          <span>Selecionar</span>
+                        </label>
+                        <input
+                          type="file"
+                          name=""
+                          id="cover-photo"
+                          accept="image/png"
+                          required
+                        />
+                        <div class="error-message">
+                          <img
+                            src="./assets/ícones/circle-alert.svg"
+                            alt="ícone de alerta de error"
+                          />
+                          <span>Error message</span>
+                        </div>
+                      </div>
+
                       <span>Nenhum arquivo selecionado</span>
                       <span>image.png</span>
                     </div>
@@ -365,6 +376,7 @@
                 </div>
               </fieldset>
             </fieldset>
+            <button style="width: 100px; height: 20px"></button>
           </form>
         </div>
       </main>
