@@ -1,10 +1,14 @@
 const input = document.getElementById("cover-photo");
-const [p, f] = [...input.parentElement.querySelectorAll("span")].filter((s) =>
+const container = input.closest(".container-mm");
+const [p, f] = [...container.querySelectorAll("span")].filter((s) =>
   /Nenhum arquivo selecionado|image\.png/.test(s.textContent)
 );
-input.onchange = () => {
-  [p, f].forEach(
-    (el, i) => (el.style.display = input.files.length == i ? "inline" : "none")
-  );
-};
-input.onchange();
+
+p.style.display = "inline";
+f.style.display = "none";
+
+input.addEventListener("change", () => {
+  const hasFile = input.files.length > 0;
+  p.style.display = hasFile ? "none" : "inline";
+  f.style.display = hasFile ? "inline" : "none";
+});

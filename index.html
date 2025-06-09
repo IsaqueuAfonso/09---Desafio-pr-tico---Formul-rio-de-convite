@@ -345,10 +345,10 @@
                   </div>
 
                   <div class="container-coverphoto flex-col">
-                    <div>Foto de capa</div>
-
-                    <div class="flex">
+                    <div class="flex container-mm">
                       <div class="flex-col input-file">
+                        <div>Foto de capa</div>
+
                         <label for="cover-photo" class="flex">
                           <img src="./assets/ícones/upload.svg" alt="" />
                           <span>Selecionar</span>
@@ -360,7 +360,7 @@
                           accept="image/png"
                           required
                         />
-                        <div class="error-message">
+                        <div class="error-message error-photo">
                           <img
                             src="./assets/ícones/circle-alert.svg"
                             alt="ícone de alerta de error"
@@ -376,7 +376,70 @@
                 </div>
               </fieldset>
             </fieldset>
-            <button style="width: 100px; height: 20px"></button>
+
+            <fieldset class="flex-col contact-details">
+              <div class="img-legend flex">
+                <img src="./assets/ícones/contact.svg" alt="" />
+                <legend>Dados para contato</legend>
+              </div>
+
+              <div class="text-input flex-col">
+                <label for="title">Nome</label>
+                <input
+                  type="text"
+                  id="title"
+                  name="title"
+                  placeholder="Nome do evento"
+                  required
+                />
+                <div class="error-message">
+                  <img
+                    src="./assets/ícones/circle-alert.svg"
+                    alt="ícone de alerta de error"
+                  />
+                  <span>Error message</span>
+                </div>
+              </div>
+
+              <div class="text-input text-input-container flex">
+                <div class="input-two flex-col">
+                  <label for="email">E-mail</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="exemplo@email.com"
+                  />
+                </div>
+
+                <div class="input-two flex-col">
+                  <label for="tel">Telefone</label>
+                  <input
+                    type="tel"
+                    id="tel"
+                    name="tel"
+                    placeholder="(99) 99999-9999"
+                  />
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="footer flex-col">
+              <container-footer>
+                <div class="items">
+                  <label for="Terms-and-conditions"></label>
+                  <input type="checkbox" id="Terms-and-conditions" />
+                  <span>
+                    Li e concordo com os Termos e Condições e com a Política de
+                    Privacidade
+                  </span>
+                </div>
+              </container-footer>
+
+              <div class="button">
+                <button></button>
+              </div>
+            </fieldset>
           </form>
         </div>
       </main>
