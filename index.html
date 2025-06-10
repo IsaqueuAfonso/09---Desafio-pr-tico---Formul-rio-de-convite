@@ -425,19 +425,36 @@
             </fieldset>
 
             <fieldset class="footer flex-col">
-              <container-footer>
-                <div class="items">
-                  <label for="Terms-and-conditions"></label>
+              <div class="container-footer flex-col">
+                <div class="items flex">
                   <input type="checkbox" id="Terms-and-conditions" />
+                  <label for="Terms-and-conditions"></label>
                   <span>
-                    Li e concordo com os Termos e Condições e com a Política de
-                    Privacidade
+                    Li e concordo com os <span>Termos e Condições</span> e com a
+                    <span>Política de Privacidade</span>
                   </span>
                 </div>
-              </container-footer>
 
-              <div class="button">
-                <button></button>
+                <div class="items flex">
+                  <input type="checkbox" id="updates-and-promotions-email" />
+                  <label for="updates-and-promotions-email"></label>
+                  <span>
+                    Aceito receber atualizações e promoções por e-mail
+                  </span>
+                </div>
+
+                <div class="items flex">
+                  <input type="checkbox" id="updates-and-promotions-sms" />
+                  <label for="updates-and-promotions-sms"></label>
+                  <span> Aceito receber atualizações e promoções por SMS </span>
+                </div>
+              </div>
+
+              <div class="button flex">
+                <button>
+                  <img src="./assets/ícones/ticket.svg" alt="" />
+                  <span>Gerar convite</span>
+                </button>
               </div>
             </fieldset>
           </form>

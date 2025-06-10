@@ -1,0 +1,62 @@
+.footer {
+  gap: 3rem;
+  .container-footer {
+    gap: 0.75rem;
+    .items {
+      align-items: center;
+      gap: 0.75rem;
+      label {
+        display: inline-block;
+        min-width: 1.25rem;
+        min-height: 1.25rem;
+        border-radius: 0.25rem;
+        border: 1px solid var(--input-stroke);
+        background-color: var(--input-base);
+      }
+      input {
+        display: none;
+
+        &:checked + label {
+          background-image: url("/assets/ícones/check.svg");
+          border-color: var(--brand-light);
+        }
+      }
+      span {
+        font-size: var(--Body-Sm);
+        color: var(--text-body);
+
+        span {
+          color: var(--brand-light);
+        }
+      }
+    }
+  }
+
+  .button {
+    justify-content: flex-end;
+
+    :hover {
+      background-color: var(--brand-mid);
+    }
+
+    button {
+      all: unset;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.8125rem;
+
+      width: 11.0625rem;
+      height: 3rem;
+
+      border-radius: 0.5rem;
+      background-color: var(--brand-dark);
+
+      span {
+        font: var(--Body-Md);
+        color: var(--text-heading);
+      }
+    }
+  }
+}

@@ -122,6 +122,9 @@
         color: var(--text-heading);
         font: var(--Body-Md);
       }
+      &:hover {
+        background-color: var(--shape-hover);
+      }
     }
 
     .error-photo {
